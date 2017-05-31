@@ -1,20 +1,20 @@
 import random
 import time
+try:
+  print ("welcom")
+  time.sleep(2)
 
-print ("welcom")
-time.sleep(2)
+  print ("")
+  print ("")
 
-print ("")
-print ("")
-
-inputkey = ""
-while ( inputkey != "q"):
-  print ("help = h quit = q")
-  inputkey = input()
-  if (inputkey == "h"):
-    print ("")
-    print ("help")
-    print ("")
-    print ("første ting")
-    print ("")
-time.sleep(1)
+  inputkey = ""
+  while ( inputkey != "q"):
+    print ("help = h quit = q")
+    inputkey = input()
+    if (inputkey == "h"):
+      print ("")
+      print ("help")
+      print ("")
+      print ("første ting")
+      print ("")
+  time.sleep(1)
