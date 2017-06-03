@@ -1,2 +1,15 @@
 general:
   build_dir: api
+  checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+dependencies:
+  post:
+    - python ./install-packages
+    database:
+  override:
+    - mysql -u ubuntu circle_test < my-database-setup.sql
+    test:
+  override:
+    - php ./test-suite/run.php --unit-tests
